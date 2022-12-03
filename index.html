@@ -3,46 +3,113 @@
 
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Tienda Online - Boutique de Prix</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Online - Boutique de Prix</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/content-slider.css">
 
-    </head>
-    
-    <body>
-        <header class="main-header">
-            <div class="container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
-                <!-- Navbar -->
-                <div class="main-header__container"> 
-                    <h1 class="main-header__tittle">La Boutique des Prix</h1>
-                    <span class="fas fa-bars" id="btn-menu"> </span>
+</head>
 
-                    <nav>
-                        <!---->
-                        <ul class="nav-menu">
-                            <li><a href="index.html">HOME</a></li> > <!-- Colocar mensaje con JAVASCRIPT -->
-                            <li class="dropdown-link"><a href="">PRODUCTOS<i class="fa-solid fa-caret-down"></i></a>
-                              <ul class="dropdown">
-                                <li><a href="cat1.html">Componentes de PC  </a></li>
+<body>
+    <header class="main-header">
+
+        <!-- Navbar -->
+        <div class="container">
+            <div class="main-header__container">
+                <h1 class="main-header__tittle">La Galera</h1>
+                <span class="fas fa-bars" id="btn-menu"> </span>
+
+                <nav>
+                    <!---->
+                    <ul class="nav-menu">
+                        <li><a href="index.html">HOME</a></li> >
+                        <!-- Colocar mensaje con JAVASCRIPT -->
+                        <li class="dropdown-link"><a href="">PRODUCTOS<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="cat1.html">Componentes de PC</a></li>
                                 <li><a href="cat2.html">Teclados</a></li>
                                 <li><a href="cat3.html">Mouses</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="about.html">CONTACTO</a></li>
-                        </ul>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
 
 
-                    </nav>
-
-                </div>
+                </nav>
 
             </div>
 
-            <div class="main-header__container"> 
+        </div>
+
+        <!-- CONTENIDO -->
+        <div>
+            <div class="main-header__container">
+                <!-- Content-slider -->
+                <div class="slider-text">
+                    <h1>La Galera</h1>
+                    <h3>Experimenta una nueva forma de jugar con nosotros<br>
+                        La Galera, Gaming Shop</h3>
+                    <p>Para juegos eficientes y buena capacidad de respuesta del dispositivo</p>
+                    <a href="">Click aquí!</a>
+                </div>
+
+                <div>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="imgs/walp1.jpg" class="img">
+                            <div class="text">Mouse Gamer</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="imgs/walp2.jpg" class="img">
+                            <div class="text">Teclado Gamer</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="imgs/walp3.jpg" class="img">
+                            <div class="text">Audífonos Gamer</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="imgs/walp4.jpg" class="img">
+                            <div class="text">Audífonos Gamer</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+
+                </div>
+
+                <script type="text/javascript" src="js/script.js"> </script>
+
+            </div>
+
+
+
+            <div class="main-header__container">
                 <span class="main-header__txt"> Ayuda </span>
                 <p class="main-header__txt"><i class="fas fa-phone"></i>Llamar al 933416486</p>
             </div>
@@ -50,27 +117,27 @@
             <div class="main-header__container">
                 <i class="fas fa-user"></i>
                 <a href="" class="main-header__btn">Mi carrito<i class="fas fa-shopping-cart"></i></a>
-                <input type="search" class="main-header"><i class="fas fa-search"></i> 
+                <input type="search" class="main-header"><i class="fas fa-search"></i>
             </div>
 
 
-        </header>
+    </header>
 
 
 
 
-          <!-- Credit -->
-  
-  <footer>
-    <address style="background: rgb(209, 209, 209); padding: 30px;">
-      Autor:<a href="joedaniel@company.com">Joe D. Flores</a>,
-      @daeL
-    </address>
-  </footer>
+    <!-- Credit -->
+
+    <footer>
+        <address style="background: rgb(209, 209, 209); padding: 30px;">
+            Autor:<a href="joedaniel@company.com">Joe D. Flores</a>,
+            @daeL
+        </address>
+    </footer>
 
 
 
-    </body>
+</body>
 
 
 
