@@ -1,3 +1,14 @@
+/*** Alerta de main page ***/
+function alertPage() {
+  window.alert("Bienvenido! Estas en la página principal :-)");
+}
+
+
+
+/*** Alerta de main page END ***/
+
+
+/*** Slide pictures ***/ 
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,3 +35,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+/*** Slide pictures END ***/ 
+
+

@@ -5,50 +5,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tienda Online - Boutique de Prix</title>
+    <title>Tienda Online - La Galera</title>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/content-slider.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
 
-<body>
+<body style="padding-top: 56px ;">
     <header class="main-header">
 
         <!-- Navbar -->
-        <div class="container">
-            <div class="main-header__container">
-                <h1 class="main-header__tittle">La Galera</h1>
-                <span class="fas fa-bars" id="btn-menu"> </span>
+        <div class="nav-fixed">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><a href="index.html" style="text-decoration:none">La Galera</a></h1>
+                    <i class="fas fa-bars" id="button-nav"> </i>
+                </div>
 
-                <nav>
-                    <!---->
-                    <ul class="nav-menu">
-                        <li><a href="index.html">HOME</a></li> >
-                        <!-- Colocar mensaje con JAVASCRIPT -->
-                        <li class="dropdown-link"><a href="">PRODUCTOS<i class="fa-solid fa-caret-down"></i></a>
-                            <ul class="dropdown">
-                                <li><a href="cat1.html">Componentes de PC</a></li>
-                                <li><a href="cat2.html">Teclados</a></li>
-                                <li><a href="cat3.html">Mouses</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
+                <ul class="nav-menu">
 
+                    <li><a href="index.html" onclick="alertPage()">HOME</a></li> >
+                    <li><a href="contacto.html">CONTACTO</a></li> >
+                    <!-- Colocar mensaje con JAVASCRIPT -->
+                    <li class="dropdown-link"><a href="">PRODUCTOS<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="cat1.html">Componentes de PC</a></li>
+                            <li><a href="cat2.html">Teclados</a></li>
+                            <li><a href="cat3.html">Mouses</a></li>
+                        </ul>
+                    </li>
+                    <script>
+                        function alertPage() {
+                            window.alert("Bienvenido! Estas en la página principal :-)");
+                        }
+                    </script>
 
-                </nav>
+                </ul>
 
             </div>
-
         </div>
 
+
         <!-- CONTENIDO -->
-        <div>
-            <div class="main-header__container">
+        <div class="container-slider">
+            <div class="slider">
                 <!-- Content-slider -->
                 <div class="slider-text">
                     <h1>La Galera</h1>
@@ -58,7 +65,7 @@
                     <a href="">Click aquí!</a>
                 </div>
 
-                <div>
+                <div class="slides">
                     <!-- Slideshow container -->
                     <div class="slideshow-container">
 
@@ -129,8 +136,8 @@
     <!-- Credit -->
 
     <footer>
-        <address style="background: rgb(209, 209, 209); padding: 30px;">
-            Autor:<a href="joedaniel@company.com">Joe D. Flores</a>,
+        <address style="background: rgb(92, 27, 27); padding: 15px; align-content: center;">
+            Autor:<a href="correo.html">Joe D. Flores</a>,
             @daeL
         </address>
     </footer>
