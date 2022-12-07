@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/content-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
+    <link rel="stylesheet" href="css/responsive-table.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg" href="imgs/icon.png"/>
 
 <!-- Navbar -->
 <div class="nav-fixed">
@@ -46,24 +47,21 @@
 <body>
 
     <form method="post" action="cgi-bin/boletaCompra.pl">
-        <div class="">
+        <div class="container">
             <div>
                 <div>
-                    <br><br><br><br><br>
-                    <h2> DETALLES DEL COMPRADOR</h2>
+                    <br><br><br>
+                    <h23> DETALLES DEL COMPRADOR</h2>
                 </div>
                 <div>
                     <div>
-                        NOMBRE DEL COMPRADOR
-                    </div>
-                    <div>
-                        <input type="textbox" name="nombre">
+                        Ingrese su nombre: <input type="textbox" name="nombre"> <br> <br> 
                     </div>
                 </div>
             </div>
             <div>
                 <div>
-                    <h2>Detalles de la orden</h2>
+                    <h3>Detalles de compra</h3><br>
                 </div>
                 <div>
                     <table class="table table-stripped tabler-border table-dense table-hover">
@@ -123,18 +121,20 @@
                             <td>5600.00</td>
                             <td><input type="textbox" name="producto9"></td>
                         </tr>
-                        <tr>
-                            <td>RABBIT</td>
-                            <td>50.00</td>
-                            <td><input type="textbox" name="producto10"></td>
-                        </tr>
+
                         <tr>
 
                     </table>
-                </div>
-                <div>
+                    <br>
                     <input type="submit">
                 </div>
+            
+                <div>
+
+
+
+                </div>
+
             </div>
         </div>
       </form>

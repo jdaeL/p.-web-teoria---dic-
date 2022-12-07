@@ -1,304 +1,305 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    height: 100vh;
-    background: #161618;
+  height: 100vh;
+  background: #161618;
 }
 
 * a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 * li {
-    list-style: none;
+  list-style: none;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: rgb(101, 101, 101);
+  margin: 0;
+  background-color: rgb(101, 101, 101);
 }
 
 img {
-    display: block;
-    float: center;
-    width: 1000px;
-    height: 600px;
+  display: block;
+  float: center;
+  width: 1000px;
+  height: 600px;
 }
 
 .main-header {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .main-header__title {
-    text-align: center;
-    font-size: 2.5em;
-    margin: 10px 0;
-    color: #453456;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #453456;
 }
 
 .main-nav {
-    display: none;
+  display: none;
 }
 
 .main-header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon-menu {
-    font-size: 1.5em;
-    border: 1px solid #454456;
-    display: block;
-    padding: 10px 20px;
+  font-size: 1.5em;
+  border: 1px solid #454456;
+  display: block;
+  padding: 10px 20px;
 }
 
 li {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 /* DROPDOWN NAVBAR */
 .dropdown {
-    position: absolute;
-    display: block;
-    background: #080808;
-    top: 140%;
-    width: 100%;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
-    border-radius: 1px;
+  position: absolute;
+  display: block;
+  background: #080808;
+  top: 140%;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  border-radius: 1px;
 }
 
 li a i {
-    font-size: 12px;
-    margin-left: 10px;
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .dropdown-link:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    top: 100%;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
 }
 
 .main-header__container {
-    display: block;
-    padding: 10px 20px;
-    border: 1px solid #454546;
-    text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #454546;
+  text-decoration: none;
 }
 
 .main-header__input {
-    display: block;
-    padding: 10px;
+  display: block;
+  padding: 10px;
 }
 
 .dropdown {
-    position: absolute;
-    display: block;
-    background: #080808;
-    top: 140%;
-    width: 100%;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
-    border-radius: 1px;
+  position: absolute;
+  display: block;
+  background: #080808;
+  top: 140%;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  border-radius: 1px;
 }
-
-
 
 /* Nav */
 .nav-fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .navbar {
-    height: 60px;
-    display: grid;
-    background: #080808;
-    position: relative;
-    width: 100%;
-    grid-template-columns: 1fr 2fr 3fr;
-    align-items: center;
-
+  height: 60px;
+  display: grid;
+  background: #080808;
+  position: relative;
+  width: 100%;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
 }
 
 /* LOGO */
 .logo {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 
 .logo h1 a {
-    color: #fff;
+  color: #fff;
 }
 
 .logo i {
-    display: none;
+  display: none;
 }
 
 /* End logo  */
 
 /* Menu */
 ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 li {
-    display: flex;
-    position: relative;
-    transition: .15s;
+  display: flex;
+  position: relative;
+  transition: 0.15s;
 }
 
 li a {
-    padding: 15px 30px;
-    color: #fff;
-    transition: .2s;
+  padding: 15px 30px;
+  color: #fff;
+  transition: 0.2s;
 }
 
 li a:hover {
-    color: #8b0000;
+  color: #8b0000;
 }
 
 li:hover {
-    background-color: #2f2f2f;
-    border-radius: 4px;
-
+  background-color: #2f2f2f;
+  border-radius: 4px;
 }
 
 .dropdown {
-    position: absolute;
-    display: block;
-    background: #080808;
-    top: 130%;
-    border-radius: 4px;
-    width: 200px;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
+  position: absolute;
+  display: block;
+  background: #080808;
+  top: 130%;
+  border-radius: 4px;
+  width: 200px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
 }
 
 li a i {
-    font-size: 12px;
-    margin-left: 10px;
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .dropdown-link:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    top: 115%;
+  opacity: 1;
+  visibility: visible;
+  top: 115%;
 }
 
 /* End menu */
 
 /* Account */
 .Account {
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 3rem;
-    position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3rem;
+  position: relative;
 }
 
 .Account img {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
 }
 
 .Profiledropdown {
-    background: #080808;
-    display: flex;
-    flex-direction: column;
-    top: 50px;
-    position: absolute;
-    height: 120px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    right: 0;
-    display: none;
+  background: #080808;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  position: absolute;
+  height: 120px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  right: 0;
+  display: none;
 }
 
 .Profiledropdown a {
-    display: inline-block;
-    margin-bottom: .5rem;
-    color: #fff;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .Account i {
-    display: inline-block;
-    margin-right: 1.5rem;
-    position: relative;
-    font-size: 1.2rem;
-    cursor: pointer;
+  display: inline-block;
+  margin-right: 1.5rem;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .Cartdropdown {
-    position: absolute;
-    display: block;
-    top: 60px;
-    width: 300px;
-    height: 150px;
-    right: 0;
-    background: #080808;
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
-
+  position: absolute;
+  display: block;
+  top: 60px;
+  width: 300px;
+  height: 150px;
+  right: 0;
+  background: #080808;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
 }
 
 .Cartdropdown a {
-    display: inline-block;
-    margin-top: 40px;
+  display: inline-block;
+  margin-top: 40px;
 }
 
 i:hover {
-    color: #8b0000;
+  color: #8b0000;
 }
 
 i:hover .Cartdropdown {
-    opacity: 1;
-    visibility: visible;
-    top: 40px;
+  opacity: 1;
+  visibility: visible;
+  top: 40px;
 }
-
 
 /* Account End */
 
 .text-top {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
 }
