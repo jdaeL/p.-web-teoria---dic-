@@ -18,6 +18,9 @@ print <<HTML;
     <meta charset="UTF-8">
     <title>Lista del Comprador</title>
     <link rel="icon" type="image/svg" href="../imgs/icon.png"/>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive-table.css">
+
 HTML
 
 my $pro1=$q->param('producto1');
@@ -36,6 +39,7 @@ $totalobjetos=$pro1+$pro2+$pro3+$pro4+$pro5+$pro6+$pro7+$pro8+$pro9+$pro10;
 print <<HTML    
 </head>
 <body>
+    <br><br>
     <h1 style="text-align: center;">Boleta de venta</h1>
     <table>
         <tr>
@@ -89,6 +93,6 @@ print <<HTML
     <table>
         <td>Precio total    >>>>>    $preciototal</td>
     </table> <br>
-<button onclick="window.print()">Imprimir boleta</button>
+    <button style="margin:auto; display:block;" onclick="window.print()">Imprimir boleta</button>
 </body>
 HTML

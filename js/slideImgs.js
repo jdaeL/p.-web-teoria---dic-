@@ -2,9 +2,6 @@
 function alertPage() {
   window.alert("Bienvenido! Estas en la página principal :-)");
 }
-
-
-
 /*** Alerta de main page END ***/
 
 
@@ -35,7 +32,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
 /*** Slide pictures END ***/ 
-
 
