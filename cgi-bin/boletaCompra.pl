@@ -10,6 +10,15 @@ my $preciototal=0;
 my $totalobjetos=0;
 my $name=$q->param('nombre');
 
+#imprimir html 
+print "Content-type: text/html\n\n";
+print <<HTML; 
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lista del Comprador</title>
+    <link rel="icon" type="image/svg" href="../imgs/icon.png"/>
+HTML
 
 my $pro1=$q->param('producto1');
 my $pro2=$q->param('producto2');
@@ -21,8 +30,65 @@ my $pro7=$q->param('producto7');
 my $pro8=$q->param('producto8');
 my $pro9=$q->param('producto9');
 my $pro10=$q->param('producto10');
-my $pro11=$q->param('producto11');
-$preciototal=$pro1*80+$pro2*120+$pro3*45+$pro4*40+$pro5*78+$pro6*68+$pro7*87+$pro8*85+$pro9*34+$pro10*50+$pro11*20;
-$totalobjetos=$pro1+$pro2+$pro3+$pro4+$pro5+$pro6+$pro7+$pro8+$pro9+$pro10+$pro11;
+$preciototal=$pro1*98+$pro2*110+$pro3*96+$pro4*199+$pro5*230+$pro6*200+$pro7*120+$pro8*2200+$pro9*3600+$pro10*5600;
+$totalobjetos=$pro1+$pro2+$pro3+$pro4+$pro5+$pro6+$pro7+$pro8+$pro9+$pro10;
 
-#imprimir html (PENDIENTE)
+print <<HTML    
+</head>
+<body>
+    <h1 style="text-align: center;">Boleta de venta</h1>
+    <table>
+        <tr>
+            <td>Nombre del Producto</td>
+            <td>Cantidad</td>
+        </tr>
+        <tr>
+            <td>Mouse Logitech</td>
+            <td>$pro1</td>
+        </tr>
+        <tr>
+            <td>Mouse Razer</td>
+            <td>$pro2</td>
+        </tr>
+        <tr>
+            <td>Mouse HiperX</td>
+            <td>$pro3</td>
+        </tr>
+        <tr>
+        <tr>
+            <td>Teclado Logitech</td>
+            <td>$pro4</td>
+        </tr>
+        <tr>
+            <td>Teclado Razer</td>
+            <td>$pro5</td>
+        </tr>
+        <tr>
+            <td>Teclado HiperX</td>
+            <td>$pro6</td>
+        </tr>
+        <tr>
+            <td>Audifonos HiperX</td>
+            <td>$pro7</td>
+        </tr>
+        <tr>
+            <td>PC 1</td>
+            <td>$pro8</td>
+        </tr>
+        <tr>
+            <td>PC 2</td>
+            <td>$pro9</td>
+        </tr>
+        <tr>
+            <td>PC 3</td>
+            <td>$pro10</td>
+        </tr>
+
+        <tr>
+    </table> 
+    <table>
+        <td>Precio total    >>>>>    $preciototal</td>
+    </table> <br>
+<button onclick="window.print()">Imprimir boleta</button>
+</body>
+HTML
