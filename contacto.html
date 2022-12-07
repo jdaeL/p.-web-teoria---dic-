@@ -8,21 +8,64 @@
 <html lang="es">
 
     <head>
+        <title>Tienda Online - La Galera</title>
         <meta charset="UTF-8">
-        <title>Tienda Online - Información de Contacto/title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" href="estilos.css">
+        <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/content-slider.css">
+        <link rel="stylesheet" href="css/responsive-table.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/svg" href="imgs/icon.png"/>
+    
     </head>
     
-    <body>
-        <div class="">
+    <body style="padding-top: 56px ;">
+        <header class="main-header">
+            <!-- Navbar -->
+            <div class="nav-fixed" >
+                <div class="navbar">
+                    <div class="logo">
+                        <h1><a href="index.html" style="text-decoration:none; font-size: 40px" >Galera</a></h1>
+                        <i id="button-nav"> </i>
+                    </div>
+    
+                    <ul class="nav-menu">
+    
+                        <li><a href="index.html" onclick="alertPage()">HOME</a></li> >
+                        <li><a href="contacto.html">CONTACTO</a></li> >
+                        <!-- Colocar mensaje con JAVASCRIPT -->
+                        <li class="dropdown-link"><a href="">PRODUCTOS<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="cat1.html">Componentes de PC</a></li>
+                                <li><a href="cat2.html">Teclados</a></li>
+                                <li><a href="cat3.html">Mouses</a></li>
+                            </ul>
+                        <li><a href="compra.html">CARRITO</a></li>
+                        </li>
+                        <script>
+                            function alertPage() {
+                                window.alert("Bienvenido! Estas en la página principal :-)");
+                            }
+                        </script>
+    
+                    </ul>
+    
+                </div>
+            </div>
+        <div> <br><br><br><br><br>
             
-            <br><br>
-            <h1> Información de contacto del proveedor </h1>
-            <h2>Correo -> joedaniel0804@gmail.com </h2>
-            <h2>Numero de contacto -> 933416486</h2>
+            <h2 style="text-align: center; color: white;">Información de contacto del proveedor</h2><br>
+            <table>
+                <tr>
+                    <td>Correo</td>
+                    <td>Numero de contacto</td>
+                </tr>
+                <tr>
+                    <td>joedaniel0804@gmail.com</td>
+                    <td>933416486</td>
+                </tr>
+            </table>
         </div>
         
         
