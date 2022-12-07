@@ -1,13 +1,9 @@
 * {
+  /* border: 1px solid red; */
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  height: 100vh;
-  background: #161618;
 }
 
 * a {
@@ -18,13 +14,12 @@ body {
   list-style: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   background-color: rgb(101, 101, 101);
+  /* 
+  display: flex;
+  justify-content: flex-end; */
 }
 
 img {
@@ -32,6 +27,12 @@ img {
   float: center;
   width: 1000px;
   height: 600px;
+  /* centrar imagen responsively */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);  
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
 }
 
 .main-header {
@@ -48,6 +49,15 @@ img {
 .main-nav {
   display: none;
 }
+
+.nav-fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
 
 .main-header__container {
   display: flex;
@@ -196,97 +206,10 @@ li:hover {
   transition: 0.4s;
 }
 
-li a i {
-  font-size: 12px;
-  margin-left: 10px;
-}
-
-.dropdown-link:hover .dropdown {
-  opacity: 1;
-  visibility: visible;
-  top: 115%;
-}
 
 /* End menu */
 
-/* Account */
-.Account {
-  color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 3rem;
-  position: relative;
-}
-
-.Account img {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.Profiledropdown {
-  background: #080808;
-  display: flex;
-  flex-direction: column;
-  top: 50px;
-  position: absolute;
-  height: 120px;
-  width: 150px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  right: 0;
-  display: none;
-}
-
-.Profiledropdown a {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-
-.Account i {
-  display: inline-block;
-  margin-right: 1.5rem;
-  position: relative;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-.Cartdropdown {
-  position: absolute;
-  display: block;
-  top: 60px;
-  width: 300px;
-  height: 150px;
-  right: 0;
-  background: #080808;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.4s;
-}
-
-.Cartdropdown a {
-  display: inline-block;
-  margin-top: 40px;
-}
-
-i:hover {
-  color: #8b0000;
-}
-
-i:hover .Cartdropdown {
-  opacity: 1;
-  visibility: visible;
-  top: 40px;
-}
-
 /* Account End */
-
 .text-top {
   color: #f2f2f2;
   font-size: 15px;
@@ -297,9 +220,21 @@ i:hover .Cartdropdown {
 }
 
 /* CONTAINER */
-
 .container {
   padding: 20px;
   width: 100%;
   text-align: center;
 }
+
+footer{
+  font-size: smaller;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+
+}
+
