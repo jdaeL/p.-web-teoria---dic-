@@ -22,7 +22,7 @@ body {
   justify-content: flex-end; */
 }
 
-img {
+.img {
   display: block;
   float: center;
   width: 1000px;
@@ -41,9 +41,9 @@ img {
 
 .main-header__title {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin: 10px 0;
-  color: #453456;
+  color: #b3b3b3;
 }
 
 .main-nav {
@@ -219,13 +219,6 @@ li:hover {
   text-align: center;
 }
 
-/* CONTAINER */
-.container {
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-}
-
 footer{
   font-size: smaller;
   position:fixed;
@@ -238,3 +231,66 @@ footer{
 
 }
 
+/* Images responsive */
+.imagenesindex{
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+.imagenesindex ul{
+  list-style: none;
+}
+.imagenesindex img{
+  width: 300px;
+}
+.productoima{
+  float: center;
+  margin: 25px;
+  width: 300px;
+  height: 410px;
+  font-family: asap;
+  font-size: 16px;
+  line-height: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: all .2s ease-in-out;
+
+}
+.box {
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 50px;
+  float: center;
+  margin: 25px;
+  width: 300px;
+  height: 410px;
+
+}
+.box:hover{
+  transform: scale(1.05);
+} 
+
+/*Responsive media quaries*/
+@media screen and (max-width:1200px){
+  .box{
+    width: 40%;
+  } 
+}
+@media screen and (max-width:600px){
+  .box{
+    width: 90%;
+  } 
+}
