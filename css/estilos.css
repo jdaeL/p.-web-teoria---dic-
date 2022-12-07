@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid red; */
+/*  border: 1px solid red; */ 
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -219,6 +219,25 @@ li:hover {
   text-align: center;
 }
 
+/* CONTAINER */
+.container {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+/* Account End */
+.text-top {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 footer{
   font-size: smaller;
   position:fixed;
@@ -233,7 +252,6 @@ footer{
 
 /* Images responsive */
 .imagenesindex{
-  flex-wrap: wrap;
   text-align: center;
   width: 100%;
   height: auto;
