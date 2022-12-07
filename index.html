@@ -4,15 +4,12 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
     <title>Tienda Online - La Galera</title>
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/content-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,7 +22,7 @@
         <div class="nav-fixed">
             <div class="navbar">
                 <div class="logo">
-                    <h1><a href="index.html" style="text-decoration:none">La Galera</a></h1>
+                    <h1><a href="index.html" style="text-decoration:none; font-size: 40px" >La Galera</a></h1>
                     <i class="fas fa-bars" id="button-nav"> </i>
                 </div>
 
@@ -40,6 +37,7 @@
                             <li><a href="cat2.html">Teclados</a></li>
                             <li><a href="cat3.html">Mouses</a></li>
                         </ul>
+                    <li><a href="compra.html">LISTA DE COMPRADOR</a></li>
                     </li>
                     <script>
                         function alertPage() {
@@ -57,12 +55,10 @@
         <div class="container-slider">
             <div class="slider">
                 <!-- Content-slider -->
-                <div class="slider-text">
-                    <h1>La Galera</h1>
+                <div class="text-top"> <br>
                     <h3>Experimenta una nueva forma de jugar con nosotros<br>
                         La Galera, Gaming Shop</h3>
-                    <p>Para juegos eficientes y buena capacidad de respuesta del dispositivo</p>
-                    <a href="">Click aquí!</a>
+                    <p>Para juegos eficientes y buena capacidad de respuesta del dispositivo</p> <br> <br>
                 </div>
 
                 <div class="slides">
@@ -73,13 +69,13 @@
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 4</div>
                             <img src="imgs/walp1.jpg" class="img">
-                            <div class="text">Mouse Gamer</div>
+                            <div class="text">Mouses Gamer</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 4</div>
                             <img src="imgs/walp2.jpg" class="img">
-                            <div class="text">Teclado Gamer</div>
+                            <div class="text">Teclados Gamer</div>
                         </div>
 
                         <div class="mySlides fade">
@@ -91,7 +87,7 @@
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 4</div>
                             <img src="imgs/walp4.jpg" class="img">
-                            <div class="text">Audífonos Gamer</div>
+                            <div class="text">PC armadas y componentes</div>
                         </div>
 
                         <!-- Next and previous buttons -->
@@ -121,12 +117,14 @@
                 <p class="main-header__txt"><i class="fas fa-phone"></i>Llamar al 933416486</p>
             </div>
 
-            <div class="main-header__container">
-                <i class="fas fa-user"></i>
-                <a href="" class="main-header__btn">Mi carrito<i class="fas fa-shopping-cart"></i></a>
-                <input type="search" class="main-header"><i class="fas fa-search"></i>
-            </div>
 
+
+    <!-- BOTON PARA IMPRIMIR UN RECIBO CREADO DE UN HTML -->
+    <!-- 1.- Generar un HTML con formato de boleta 
+            a) Randomizer para codigo random falso
+            b) Exportar la cantidad de productos al html
+         2.- Colocar un boton de print para imprimir la pag con JS
+    -->
 
     </header>
 
